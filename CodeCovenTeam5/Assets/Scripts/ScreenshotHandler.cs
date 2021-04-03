@@ -26,7 +26,7 @@ public class ScreenshotHandler : MonoBehaviour
             image.ReadPixels(rect, 0, 0);
 
             byte[] byteArr = image.EncodeToPNG();
-            System.IO.File.WriteAllBytes("testImage.png", byteArr);
+            System.IO.File.WriteAllBytes("Assets/GamePhotos/testImage.png", byteArr);
             Debug.Log("Took picture");
 
             RenderTexture.ReleaseTemporary(rt);
@@ -38,19 +38,6 @@ public class ScreenshotHandler : MonoBehaviour
     {
         cam.targetTexture = RenderTexture.GetTemporary(width, height, 16);
         takeSS = true;
-
-        /*RenderTexture rt = cam.targetTexture;
-        Texture2D image = new Texture2D(width, height, TextureFormat.RGBA32, false);
-        Rect rect = new Rect(0, 0, width, height);
-        image.ReadPixels(rect, 0, 0);*/
-
-        /*byte[] byteArr = image.EncodeToPNG();
-        System.IO.File.WriteAllBytes("testImage.png", byteArr);
-        Debug.Log("Took picture");
-
-        RenderTexture.ReleaseTemporary(rt);
-        cam.targetTexture = null;*/
-
 
     }
 
