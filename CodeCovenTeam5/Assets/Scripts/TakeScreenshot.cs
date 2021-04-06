@@ -13,7 +13,7 @@ public class TakeScreenshot : MonoBehaviour
     void Start()
     {
         cam = gameObject.GetComponent<Camera>();
-        cam.enabled = false;
+        cam.enabled = true;
     }
 
     // Update is called once per frame
@@ -21,10 +21,9 @@ public class TakeScreenshot : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            cam.enabled = true;
             Debug.Log("Space");
             ScreenshotHandler.Screenshot_static(width, height);
-            //cam.enabled = false;
+            
         }
     }
 }

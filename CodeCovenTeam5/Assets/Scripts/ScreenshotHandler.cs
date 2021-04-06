@@ -31,7 +31,7 @@ public class ScreenshotHandler : MonoBehaviour
 
             RenderTexture.ReleaseTemporary(rt);
             cam.targetTexture = null;
-            cam.enabled = false;
+            
         }
     }
     private void Screenshot(int width, int height)
