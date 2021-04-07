@@ -1,37 +1,53 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class ScreenshotHandler : MonoBehaviour
 {
     private static ScreenshotHandler instance;
     private Camera cam;
     private bool takeSS = false;
+    private int picCt = 0;
 
     // THIS IS REALLY MESSY BUT I'LL FIX IT
     private void Awake()
     {
         instance = this;
         cam = gameObject.GetComponent<Camera>();
+
+        if (Directory.Exists("Assets/GamePhotos"))
+        {
+            Directory.Delete("Assets/GamePhotos", true);
+            Directory.CreateDirectory("Assets/GamePhotos");
+        }
     }
 
-    private void OnPostRender()
+    private void Update()
     {
         if (takeSS)
         {
             takeSS = false;
-            RenderTexture rt = cam.targetTexture;
-            Texture2D image = new Texture2D(rt.width, rt.height, TextureFormat.ARGB32, false);
-            Rect rect = new Rect(0, 0, rt.width, rt.height);
-            image.ReadPixels(rect, 0, 0);
 
-            byte[] byteArr = image.EncodeToPNG();
-            System.IO.File.WriteAllBytes("Assets/GamePhotos/testImage.png", byteArr);
-            Debug.Log("Took picture");
+            RenderTexture currRT = RenderTexture.active;
+            RenderTexture.active = cam.targetTexture;
 
-            RenderTexture.ReleaseTemporary(rt);
-            cam.targetTexture = null;
-            
+            cam.Render();
+
+            Texture2D image = new Texture2D(cam.targetTexture.width, cam.targetTexture.height);
+            image.ReadPixels(new Rect(0, 0, cam.targetTexture.width, cam.targetTexture.height), 0, 0);
+            image.Apply();
+            RenderTexture.active = currRT;
+
+            byte[] Bytes = image.EncodeToPNG();
+            Destroy(image);
+
+            File.WriteAllBytes("Assets/GamePhotos/gamePicture_" + picCt++ + ".png", Bytes);
+            ScreenCapture.CaptureScreenshot("Assets/GamePhotos/testScreenshot.png");
+            Debug.Log("Took screenshot");
+
+
+            cam.enabled = false;
         }
     }
     private void Screenshot(int width, int height)
@@ -44,5 +60,15 @@ public class ScreenshotHandler : MonoBehaviour
     public static void Screenshot_static(int width, int height)
     {
         instance.Screenshot(width, height);
+    }
+
+    public void GetPhotos()
+    {
+        DirectoryInfo dir = new DirectoryInfo("Assets/GamePhotos");
+        FileInfo[] info = dir.GetFiles();
+        foreach (FileInfo f in info)
+        {
+            // Here's where we put code to display the images
+        }
     }
 }
