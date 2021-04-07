@@ -6,8 +6,8 @@ using System.IO;
 public class ScreenshotHandler : MonoBehaviour
 {
     private static ScreenshotHandler instance;
-    private Camera cam;
-    private bool takeSS = false;
+    private static Camera cam;
+    private static bool takeSS = false;
     private int picCt = 0;
 
     // THIS IS REALLY MESSY BUT I'LL FIX IT
