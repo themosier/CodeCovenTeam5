@@ -6052,8 +6052,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -140}
-  m_SizeDelta: {x: 431, y: 95.4}
+  m_AnchoredPosition: {x: 0, y: -112.54}
+  m_SizeDelta: {x: 601.51, y: 95.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1011536189
 MonoBehaviour:
@@ -6075,8 +6075,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 1bfa9cc15046b9e4694d77d0f63b6a55, type: 3}
+    m_FontSize: 29
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -6085,13 +6085,13 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 'Use the mouse to look around, press Left-Shift to pull up/put away your
     camera, and use Left-Click to snap a photo.
 
 
-    Okay! (Press K)'
+    Okay! (Press "K" to hide instructions)'
 --- !u!222 &1011536190
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12075,7 +12075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
