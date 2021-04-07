@@ -10,9 +10,12 @@ public class TakeScreenshot : MonoBehaviour
 
     private Camera cam;
 
+    private AudioSource source;
+
     // Start is called before the first frame update
     void Start()
     {
+        source = GetComponent<AudioSource>();
         cam = gameObject.GetComponent<Camera>();
         cam.enabled = false;
     }
@@ -20,11 +23,12 @@ public class TakeScreenshot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (overlay.enabled && Input.GetKeyDown(KeyCode.Space))
+        if (overlay.enabled && (Input.GetMouseButtonDown(0)))
         {
             cam.enabled = true;
             Debug.Log("Space");
             ScreenshotHandler.Screenshot_static(width, height);
+            source.Play();
             
         }
     }
