@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prologue.unity
     guid: 5b7f851faea31134084450f62177e45f
+  - enabled: 1
+    path: Assets/Scenes/Zsade.unity
+    guid: f3de076eddf83c8488e17c799f0131da
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 9f6a7c08611364a24a8e6ae35b4a89a2
+  - enabled: 1
+    path: Assets/Scenes/PhotoAlbum.unity
+    guid: 961432c3db1d04f5bbae2a1db42b32f0
   m_configObjects: {}
