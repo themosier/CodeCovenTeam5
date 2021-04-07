@@ -8,9 +8,18 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("Prologue");
     }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            PhotosNotesScreen();
+        }
+    }
+
     public void PhotosNotesScreen()
     {
-        SceneManager.LoadScene("PhotoAlbum");
+        SceneManager.LoadScene("PhotoAlbum");        
     }
     public void CreditsScreen()
     {

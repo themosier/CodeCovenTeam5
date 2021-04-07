@@ -43,7 +43,6 @@ public class ScreenshotHandler : MonoBehaviour
             Destroy(image);
 
             File.WriteAllBytes("Assets/GamePhotos/gamePicture_" + picCt++ + ".png", Bytes);
-            ScreenCapture.CaptureScreenshot("Assets/GamePhotos/testScreenshot.png");
             Debug.Log("Took screenshot");
 
 

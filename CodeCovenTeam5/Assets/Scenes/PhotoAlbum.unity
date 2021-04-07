@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6434681, g: 0.5139182, b: 0.76804525, a: 1}
+  m_IndirectSpecularColor: {r: 0.6492426, g: 0.5215851, b: 0.77336115, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 55755056}
   - component: {fileID: 55755055}
   m_Layer: 0
-  m_Name: PhotoSlotEmpty (3)
+  m_Name: PhotoSlotEmpty_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,12 +195,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55755054}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -405, y: -103, z: 698}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -415.45212, y: -110.75476, z: 691.3487}
   m_LocalScale: {x: 30.482016, y: 30.482016, z: 30.482016}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 333744553}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &208891844
 GameObject:
@@ -332,6 +332,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208891844}
   m_CullTransparentMesh: 0
+--- !u!1 &333744551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 333744553}
+  - component: {fileID: 333744552}
+  m_Layer: 0
+  m_Name: PhotoArray
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &333744552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333744551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce580e62770561498f70e63f9d311c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  photoSlots:
+  - {fileID: 2070516360}
+  - {fileID: 512221428}
+  - {fileID: 1127814313}
+  - {fileID: 1986388617}
+  - {fileID: 55755054}
+  - {fileID: 1680570465}
+  - {fileID: 2085597662}
+  - {fileID: 2075303213}
+--- !u!4 &333744553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333744551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.452106, y: 7.75476, z: 6.651334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2070516362}
+  - {fileID: 512221430}
+  - {fileID: 1127814315}
+  - {fileID: 1986388619}
+  - {fileID: 55755056}
+  - {fileID: 1680570467}
+  - {fileID: 2085597664}
+  - {fileID: 2075303215}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &512221428
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,7 +403,7 @@ GameObject:
   - component: {fileID: 512221430}
   - component: {fileID: 512221429}
   m_Layer: 0
-  m_Name: PhotoSlotEmpty (1)
+  m_Name: PhotoSlotEmpty_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -406,12 +466,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512221428}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -132.42, y: 109.096, z: 698}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -142.8721, y: 101.34124, z: 691.3487}
   m_LocalScale: {x: 30.482016, y: 30.482016, z: 30.482016}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 333744553}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &554964942
 GameObject:
@@ -467,7 +527,7 @@ GameObject:
   - component: {fileID: 1127814315}
   - component: {fileID: 1127814314}
   m_Layer: 0
-  m_Name: PhotoSlotEmpty (4)
+  m_Name: PhotoSlotEmpty_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -530,12 +590,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127814313}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 137.44, y: 109.096, z: 698}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 126.9879, y: 101.34124, z: 691.3487}
   m_LocalScale: {x: 30.482016, y: 30.482016, z: 30.482016}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 333744553}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1175452183
 GameObject:
@@ -919,7 +979,7 @@ GameObject:
   - component: {fileID: 1680570467}
   - component: {fileID: 1680570466}
   m_Layer: 0
-  m_Name: PhotoSlotEmpty (2)
+  m_Name: PhotoSlotEmpty_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -982,12 +1042,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680570465}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -132.42, y: -103, z: 698}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -142.8721, y: -110.75476, z: 691.3487}
   m_LocalScale: {x: 30.482016, y: 30.482016, z: 30.482016}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 333744553}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1689415010
 GameObject:
@@ -1066,7 +1126,7 @@ GameObject:
   - component: {fileID: 1986388619}
   - component: {fileID: 1986388618}
   m_Layer: 0
-  m_Name: PhotoSlotEmpty (5)
+  m_Name: PhotoSlotEmpty_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1129,12 +1189,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986388617}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 415, y: 109.096, z: 698}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 404.54788, y: 101.34124, z: 691.3487}
   m_LocalScale: {x: 30.482016, y: 30.482016, z: 30.482016}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 333744553}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2070516360
 GameObject:
@@ -1147,7 +1207,7 @@ GameObject:
   - component: {fileID: 2070516362}
   - component: {fileID: 2070516361}
   m_Layer: 0
-  m_Name: PhotoSlotEmpty
+  m_Name: PhotoSlotEmpty_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1210,12 +1270,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070516360}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -409.97998, y: 109.096, z: 698}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -420.4321, y: 101.34124, z: 691.3487}
   m_LocalScale: {x: 30.482016, y: 30.482016, z: 30.482016}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 333744553}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2075303213
 GameObject:
@@ -1228,7 +1288,7 @@ GameObject:
   - component: {fileID: 2075303215}
   - component: {fileID: 2075303214}
   m_Layer: 0
-  m_Name: PhotoSlotEmpty (6)
+  m_Name: PhotoSlotEmpty_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1291,12 +1351,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075303213}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 415, y: -103, z: 698}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 404.54788, y: -110.75476, z: 691.3487}
   m_LocalScale: {x: 30.482016, y: 30.482016, z: 30.482016}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 333744553}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2085597662
 GameObject:
@@ -1309,7 +1369,7 @@ GameObject:
   - component: {fileID: 2085597664}
   - component: {fileID: 2085597663}
   m_Layer: 0
-  m_Name: PhotoSlotEmpty (7)
+  m_Name: PhotoSlotEmpty_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1372,12 +1432,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085597662}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 142.41998, y: -103, z: 698}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 131.96788, y: -110.75476, z: 691.3487}
   m_LocalScale: {x: 30.482016, y: 30.482016, z: 30.482016}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 333744553}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2102185407
 GameObject:
