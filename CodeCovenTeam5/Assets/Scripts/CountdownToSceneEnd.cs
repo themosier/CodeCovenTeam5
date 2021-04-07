@@ -16,7 +16,7 @@ IEnumerator loadSceneAfterDelay(float waitbySecs){
         yield return new WaitForSeconds(waitbySecs);
 
          {
-   SceneManager.LoadScene(2);
+   SceneManager.LoadScene(0);
             Debug.Log("Switched to end scene");
  }
 }
