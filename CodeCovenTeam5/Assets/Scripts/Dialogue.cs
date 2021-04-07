@@ -46,7 +46,7 @@ continueButton.SetActive(false);
         } else {
             textDisplay.text = "";
             continueButton.SetActive(false);
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 }
