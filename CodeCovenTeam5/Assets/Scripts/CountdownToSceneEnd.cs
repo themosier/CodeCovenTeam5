@@ -8,7 +8,7 @@ public class CountdownToSceneEnd : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      StartCoroutine (loadSceneAfterDelay(5));  
+      StartCoroutine (loadSceneAfterDelay(120));  
     }
 
 IEnumerator loadSceneAfterDelay(float waitbySecs){
