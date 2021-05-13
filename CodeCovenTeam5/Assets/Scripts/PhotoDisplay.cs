@@ -28,17 +28,19 @@ public class PhotoDisplay : MonoBehaviour
         Texture2D tex;
         Sprite sprite;
 
-        DirectoryInfo dir = new DirectoryInfo("Assets/GamePhotos");
+        DirectoryInfo dir = new DirectoryInfo(Application.streamingAssetsPath + " /GamePhotos");
         FileInfo[] info = dir.GetFiles();
         int index = 0;
         foreach (FileInfo f in info)
         {
             // Here's where we put code to display the images
-            if (File.Exists("Assets/GamePhotos/gamePicture_" + index + ".png"))
+            if (File.Exists(Application.streamingAssetsPath + "/GamePhotos/gamePicture_" + index + ".png"))
             {
-                bytes = File.ReadAllBytes("Assets/GamePhotos/gamePicture_" + index + ".png");
+                bytes = File.ReadAllBytes(Application.streamingAssetsPath + "/GamePhotos/gamePicture_" + index + ".png");
                 tex = new Texture2D(1, 1);
                 tex.LoadImage(bytes);
+                
+                //tex.LoadImage(Resources.Load<Texture2D>("/GamePhotos/gamePicture_" + index + ".png"));
 
                 sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
 

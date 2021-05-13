@@ -15,6 +15,10 @@ public class SceneChange : MonoBehaviour
         {
             PhotosNotesScreen();
         }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     public void PhotosNotesScreen()

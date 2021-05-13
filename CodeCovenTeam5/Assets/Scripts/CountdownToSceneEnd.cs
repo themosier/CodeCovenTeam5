@@ -11,7 +11,15 @@ public class CountdownToSceneEnd : MonoBehaviour
       StartCoroutine (loadSceneAfterDelay(120));  
     }
 
-IEnumerator loadSceneAfterDelay(float waitbySecs){
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            SceneManager.LoadScene(3);
+        }
+    }
+
+    IEnumerator loadSceneAfterDelay(float waitbySecs){
 
         yield return new WaitForSeconds(waitbySecs);
 

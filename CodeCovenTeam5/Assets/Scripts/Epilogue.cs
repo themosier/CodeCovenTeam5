@@ -16,6 +16,8 @@ public class Epilogue : MonoBehaviour
     public Animator textDisplayAnim;
 
 void Start(){
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     StartCoroutine(Type());
 }
 

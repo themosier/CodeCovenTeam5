@@ -15,11 +15,12 @@ public class ScreenshotHandler : MonoBehaviour
     {
         instance = this;
         cam = gameObject.GetComponent<Camera>();
+        Debug.Log(Application.streamingAssetsPath);
 
-        if (Directory.Exists("Assets/GamePhotos"))
+        if (Directory.Exists(Application.streamingAssetsPath + "/GamePhotos"))
         {
-            Directory.Delete("Assets/GamePhotos", true);
-            Directory.CreateDirectory("Assets/GamePhotos");
+            Directory.Delete(Application.streamingAssetsPath + "/GamePhotos", true);
+            Directory.CreateDirectory(Application.streamingAssetsPath + "/GamePhotos");
         }
     }
 
@@ -42,7 +43,7 @@ public class ScreenshotHandler : MonoBehaviour
             byte[] Bytes = image.EncodeToPNG();
             Destroy(image);
 
-            File.WriteAllBytes("Assets/GamePhotos/gamePicture_" + picCt++ + ".png", Bytes);
+            File.WriteAllBytes(Application.streamingAssetsPath + "/GamePhotos/gamePicture_" + picCt++ + ".png", Bytes);
             Debug.Log("Took screenshot");
 
 
@@ -63,7 +64,7 @@ public class ScreenshotHandler : MonoBehaviour
 
     public void GetPhotos()
     {
-        DirectoryInfo dir = new DirectoryInfo("Assets/GamePhotos");
+        DirectoryInfo dir = new DirectoryInfo(Application.streamingAssetsPath + "/GamePhotos");
         FileInfo[] info = dir.GetFiles();
         foreach (FileInfo f in info)
         {
